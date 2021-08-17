@@ -16,6 +16,21 @@
 
 通常情况下，一种方块状态对应多个方块状态值。方块状态值的类型一般有：枚举型(以字符串来表示)、数值型(int型整数或者float型浮点小数)、布尔型(true和false)、方向状态型(north,south,west,east,up,down)。
 
+例如：
+
+- axis:x/y/z（枚举型） 垂直方块的垂直方向。
+  - 常见于柱型方块
+- face:floor/ceiling/wall或attachment:floor/ceiling/double_wall/single_wall （枚举型）连接的位置。
+  - face有砂轮，拉杆，按钮；attachment有 钟
+- facing:north/south/east/west/(up/down) （方向状态型）朝向。
+  - 通常分为四朝向和六朝向。四朝向常见于柱型方块，六朝向常见于六面不同或者上下底面不同的柱型
+- powered:true/false （布尔型）是否红石激活。lit:true/false 是否点燃。waterlogged:true/fasle 是否充水。
+  - 红石材料、熔炉、不完整方块
+- north或south或east或west或up或down:true/false （布尔型）。红石粉的状态接受值为none/side/up（枚举型）
+  - 通常见于连接型植物：巨型蘑菇、紫颂植株、发光地衣(6)、藤蔓(5)，火(6)；栅栏、玻璃板、绊线(4)；围墙(5)
+- stage:0~ （数值型）生长状态。或 age:0~ 年龄。
+  - stage通常见于有生长状态的植物；age见于植物
+
 很容易可以得出这样的结论：只有一个方块状态的时候，组合的是线性的。如果有多个方块状态，则组合是乘积之值。
 
 除此之外，如果需要根据方块状态来制作连接模型，很容易得出一个结论：你要穷举到死，同时模型也要写到死。

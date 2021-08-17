@@ -18,7 +18,7 @@ Minecraft Java Edition JSON model helper
 
 6-blockbench元素搭建
 
-7-blockbench材质处理技巧以及建模风格和材质风格
+7-blockbench纹理处理技巧以及建模风格和纹理风格
 
 8-blockbench建模技巧
 
@@ -42,19 +42,19 @@ Minecraft Java Edition JSON model helper
 
 13-利用ctm拓展更多模型
 
-14-ctm更多群系拓展材质研究
+14-ctm更多群系拓展纹理研究
 
 15-利用cit拓展更多模型
 
 16-cem实体模型搭建
 
-17-利用cem和随机实体材质拓展更多模型
+17-利用cem和随机实体纹理拓展更多模型
 
 
 
 拓展篇:其他软件辅助
 
-18-动态模型与动态材质
+18-动态模型与动态纹理
 
 19-体素建模MagicVoxel
 
